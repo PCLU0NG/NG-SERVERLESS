@@ -11,7 +11,7 @@ describe('workspace-project App', () => {
   it('should display welcome message', async () => {
     await page.navigateTo();
     expect(await page.getTitleText()).toEqual(
-      'serverless-angular app is running!'
+      'ng-serverless app is running!'
     );
   });
 

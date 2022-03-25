@@ -1,7 +1,7 @@
 import { ScullyConfig } from '@scullyio/scully';
 export const config: ScullyConfig = {
   projectRoot: './src',
-  projectName: 'serverless-angular',
+  projectName: 'ng-serverless',
   outDir: './dist/static',
   routes: {},
 };

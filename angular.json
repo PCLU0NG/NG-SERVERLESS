@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "serverless-angular": {
+    "ng-serverless": {
       "projectType": "application",
       "schematics": {
         "@schematics/angular:application": {
@@ -17,7 +17,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/serverless-angular",
+            "outputPath": "dist/ng-serverless",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
@@ -60,18 +60,18 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-            "browserTarget": "serverless-angular:build"
+            "browserTarget": "ng-serverless:build"
           },
           "configurations": {
             "production": {
-              "browserTarget": "serverless-angular:build:production"
+              "browserTarget": "ng-serverless:build:production"
             }
           }
         },
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "serverless-angular:build"
+            "browserTarget": "ng-serverless:build"
           }
         },
         "test": {
@@ -101,18 +101,18 @@
           "builder": "@angular-devkit/build-angular:protractor",
           "options": {
             "protractorConfig": "e2e/protractor.conf.js",
-            "devServerTarget": "serverless-angular:serve"
+            "devServerTarget": "ng-serverless:serve"
           },
           "configurations": {
             "production": {
-              "devServerTarget": "serverless-angular:serve:production"
+              "devServerTarget": "ng-serverless:serve:production"
             }
           }
         }
       }
     }
   },
-  "defaultProject": "serverless-angular",
+  "defaultProject": "ng-serverless",
   "cli": {
     "analytics": "f33e8aef-82e4-48f9-97d1-73599e666adf"
   }

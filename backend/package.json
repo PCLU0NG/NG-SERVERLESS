@@ -28,6 +28,6 @@
   "devDependencies": {},
   "repository": {
     "type": "git",
-    "url": "https://github.com/tzmanics/serverless-angular-starter"
+    "url": "https://github.com/tzmanics/ng-serverless"
   }
 }
